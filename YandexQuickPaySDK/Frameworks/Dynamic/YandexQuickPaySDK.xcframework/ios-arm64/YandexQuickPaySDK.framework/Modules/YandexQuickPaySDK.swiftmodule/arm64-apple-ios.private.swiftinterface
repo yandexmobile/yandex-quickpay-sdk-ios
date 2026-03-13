@@ -1,0 +1,125 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name YandexQuickPaySDK -package-name yandexquickpay
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import Combine
+import CoreGraphics
+import CoreText
+import Foundation
+import Foundation/*.Bundle*/
+import Foundation/*.ProcessInfo*/
+import Foundation/*.URL*/
+import Swift
+import SwiftUI
+import UIKit
+import UIKit/*.UIViewController*/
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+public struct QuickPayConfig {
+  public let merchantId: Swift.String
+  public let locale: YandexQuickPaySDK.QuickPayLocale
+  public let environment: YandexQuickPaySDK.QuickPayEnvironment
+  public let theme: YandexQuickPaySDK.QuickPayThemeColorScheme
+  public let enableLogging: Swift.Bool
+  public init(merchantId: Swift.String, locale: YandexQuickPaySDK.QuickPayLocale = .system, environment: YandexQuickPaySDK.QuickPayEnvironment = .production, theme: YandexQuickPaySDK.QuickPayThemeColorScheme = .system, enableLogging: Swift.Bool = false)
+}
+public enum QuickPayEnvironment {
+  case sandbox
+  case production
+  public static func == (a: YandexQuickPaySDK.QuickPayEnvironment, b: YandexQuickPaySDK.QuickPayEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum QuickPayLocale {
+  case system
+  case ru
+  case en
+  public static func == (a: YandexQuickPaySDK.QuickPayLocale, b: YandexQuickPaySDK.QuickPayLocale) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum QuickPayResult {
+  case success
+  case failure
+  public static func == (a: YandexQuickPaySDK.QuickPayResult, b: YandexQuickPaySDK.QuickPayResult) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum QuickPayThemeColorScheme {
+  case system
+  case light
+  case dark
+  public static func == (a: YandexQuickPaySDK.QuickPayThemeColorScheme, b: YandexQuickPaySDK.QuickPayThemeColorScheme) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum QuickPayWidgetExpandState {
+  case collapsed
+  case expanded
+  public static func == (a: YandexQuickPaySDK.QuickPayWidgetExpandState, b: YandexQuickPaySDK.QuickPayWidgetExpandState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol QuickPaymentStateListener : AnyObject {
+  func onPaymentEnabledStateChanged(isEnabled: Swift.Bool)
+  func onSessionExpired()
+  func onPaymentResult(quickpayResult: YandexQuickPaySDK.QuickPayResult)
+}
+@_hasMissingDesignatedInitializers final public class YandexQuickPay {
+  final public func isQuickPaymentEnabled() async throws -> Swift.Bool
+  final public func enableQuickPayment() async throws
+  final public func disableQuickPayment() async throws
+  final public func getPaymentSessionId() async throws -> Swift.String
+  @_Concurrency.MainActor final public func createPaymentMethodsWidget() -> UIKit.UIView
+  @_Concurrency.MainActor final public func createPaymentMethodsWidget() -> any SwiftUICore.View
+  @_Concurrency.MainActor final public func createActivePaymentMethodBadge() -> UIKit.UIView
+  @_Concurrency.MainActor final public func createActivePaymentMethodBadge() -> any SwiftUICore.View
+  @_Concurrency.MainActor final public func enableActivePaymentMethodBadge()
+  @_Concurrency.MainActor final public func disableActivePaymentMethodBadge()
+  final public func login() async throws
+  final public func logout() async throws
+  final public func stopPaymentPolling() async
+  final public func handleUserActivity(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
+  final public func handleOpenURL(_ url: Foundation.URL) -> Swift.Bool
+  @_Concurrency.MainActor final public func createExpandablePaymentMethodsWidget(expandState: YandexQuickPaySDK.QuickPayWidgetExpandState) -> any SwiftUICore.View
+  @_Concurrency.MainActor final public func createExpandablePaymentMethodsWidget(expandState: YandexQuickPaySDK.QuickPayWidgetExpandState) -> UIKit.UIView
+  final public func addWidgetExpandChangeObserver(_ callback: @escaping (_ state: YandexQuickPaySDK.QuickPayWidgetExpandState) -> Swift.Void) async -> Foundation.UUID
+  final public func removeWidgetExpandChangeObserver(forId id: Foundation.UUID) async
+  @_Concurrency.MainActor final public func setWidgetExpanded(_ state: YandexQuickPaySDK.QuickPayWidgetExpandState)
+  @_Concurrency.MainActor final public func isWidgetExpanded() -> YandexQuickPaySDK.QuickPayWidgetExpandState?
+  @objc deinit
+}
+extension YandexQuickPaySDK.YandexQuickPay {
+  public static var instance: YandexQuickPaySDK.YandexQuickPay {
+    get
+  }
+  public static var isInitialized: Swift.Bool {
+    get
+  }
+}
+extension YandexQuickPaySDK.YandexQuickPay {
+  public static func initialize(configuration: YandexQuickPaySDK.QuickPayConfig, presenterViewController: UIKit.UIViewController?, quickPaymentStateListener: any YandexQuickPaySDK.QuickPaymentStateListener)
+  public static func createInstance(with configuration: YandexQuickPaySDK.QuickPayConfig, presenterViewController: UIKit.UIViewController?, quickPaymentStateListener: any YandexQuickPaySDK.QuickPaymentStateListener) -> YandexQuickPaySDK.YandexQuickPay
+}
+extension YandexQuickPaySDK.QuickPayEnvironment : Swift.Equatable {}
+extension YandexQuickPaySDK.QuickPayEnvironment : Swift.Hashable {}
+extension YandexQuickPaySDK.QuickPayLocale : Swift.Equatable {}
+extension YandexQuickPaySDK.QuickPayLocale : Swift.Hashable {}
+extension YandexQuickPaySDK.QuickPayThemeColorScheme : Swift.Equatable {}
+extension YandexQuickPaySDK.QuickPayThemeColorScheme : Swift.Hashable {}
+extension YandexQuickPaySDK.QuickPayResult : Swift.Equatable {}
+extension YandexQuickPaySDK.QuickPayResult : Swift.Hashable {}
+extension YandexQuickPaySDK.QuickPayWidgetExpandState : Swift.Equatable {}
+extension YandexQuickPaySDK.QuickPayWidgetExpandState : Swift.Hashable {}
