@@ -14,7 +14,7 @@
 		</data>
 		<key>FintechSDK_FintechSDKCoreUI.bundle/Assets.car</key>
 		<data>
-		GapQXv9uAC5Df7nlDgiH+awmDfM=
+		6TGcoh/kf5VyX/yu6rd4f/jDCyw=
 		</data>
 		<key>FintechSDK_FintechSDKCoreUI.bundle/Info.plist</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Modules/YandexQuickPaySDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		UTbV4wWYiJI4xTrUR5vGCUr7oEU=
+		viMUiUwe7s86OzbQSqqJPKF/xIY=
 		</data>
 		<key>Modules/YandexQuickPaySDK.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<data>
-		br5L1K5/eDebWroz2EkS9yEi1jU=
+		lWSYnq6R5RCXtnOFbcmROR3retQ=
 		</data>
 		<key>Modules/YandexQuickPaySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		br5L1K5/eDebWroz2EkS9yEi1jU=
+		lWSYnq6R5RCXtnOFbcmROR3retQ=
 		</data>
 		<key>Modules/YandexQuickPaySDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/YandexQuickPaySDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		br5L1K5/eDebWroz2EkS9yEi1jU=
+		lWSYnq6R5RCXtnOFbcmROR3retQ=
 		</data>
 		<key>YandexQuickPaySDK_YandexQuickPaySDK.bundle/Fonts/YSDisplay-Bold.ttf</key>
 		<data>
@@ -125,7 +125,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IsIwAzxf7kQfedQeeM87ObemUeY76flM6m1+W/65GBg=
+			HbcfO8LRhDyP5LXGBmODNEDoPzDQnsDgEdAZ5wMwvLQ=
 			</data>
 		</dict>
 		<key>FintechSDK_FintechSDKCoreUI.bundle/Info.plist</key>
@@ -139,21 +139,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oAvIHIx1AeXeL0qf13QCTF2RCgdn2E28wJIqPeCZ3/0=
+			b1h+uDiwmvHaF88JqvSCG9wePjPxqS74mOU3gZfiCpM=
 			</data>
 		</dict>
 		<key>Modules/YandexQuickPaySDK.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zn9LEeOMQRiLYpXu505oc866dEqUTP5GJKDxkZLikBg=
+			EQ0B5cIaKz06ySqBMSwZbQvA45i4q2bhZExu6FPQf3w=
 			</data>
 		</dict>
 		<key>Modules/YandexQuickPaySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zn9LEeOMQRiLYpXu505oc866dEqUTP5GJKDxkZLikBg=
+			EQ0B5cIaKz06ySqBMSwZbQvA45i4q2bhZExu6FPQf3w=
 			</data>
 		</dict>
 		<key>Modules/YandexQuickPaySDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -167,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zn9LEeOMQRiLYpXu505oc866dEqUTP5GJKDxkZLikBg=
+			EQ0B5cIaKz06ySqBMSwZbQvA45i4q2bhZExu6FPQf3w=
 			</data>
 		</dict>
 		<key>YandexQuickPaySDK_YandexQuickPaySDK.bundle/Fonts/YSDisplay-Bold.ttf</key>
