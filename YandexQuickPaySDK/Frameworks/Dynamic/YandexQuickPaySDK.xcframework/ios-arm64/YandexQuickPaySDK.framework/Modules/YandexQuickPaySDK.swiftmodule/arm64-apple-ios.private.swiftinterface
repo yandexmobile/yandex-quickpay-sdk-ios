@@ -17,6 +17,25 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
+public enum QuickPayAuthState : Swift.Equatable {
+  public enum BiometryFailReason : Swift.Equatable {
+    case userCancelled
+    case biometryNotAvailable
+    case unknownError
+    public static func == (a: YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason, b: YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  case notAuthorized
+  case authorizationInProgress
+  case biometryInProgress
+  case biometryFailed(reason: YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason)
+  case biometryRequired
+  case authorized
+  public static func == (a: YandexQuickPaySDK.QuickPayAuthState, b: YandexQuickPaySDK.QuickPayAuthState) -> Swift.Bool
+}
 public struct QuickPayConfig {
   public let merchantId: Swift.String
   public let locale: YandexQuickPaySDK.QuickPayLocale
@@ -76,6 +95,10 @@ public protocol QuickPaymentStateListener : AnyObject {
   func onPaymentEnabledStateChanged(isEnabled: Swift.Bool)
   func onSessionExpired()
   func onPaymentResult(quickpayResult: YandexQuickPaySDK.QuickPayResult)
+  func onAuthStateChanged(_ state: YandexQuickPaySDK.QuickPayAuthState)
+}
+extension YandexQuickPaySDK.QuickPaymentStateListener {
+  public func onAuthStateChanged(_ state: YandexQuickPaySDK.QuickPayAuthState)
 }
 @_hasMissingDesignatedInitializers final public class YandexQuickPay {
   final public func isQuickPaymentEnabled() async throws -> Swift.Bool
@@ -90,6 +113,7 @@ public protocol QuickPaymentStateListener : AnyObject {
   @_Concurrency.MainActor final public func disableActivePaymentMethodBadge()
   final public func login() async throws
   final public func logout() async throws
+  final public func getAuthState() async -> YandexQuickPaySDK.QuickPayAuthState
   final public func stopPaymentPolling() async
   final public func handleUserActivity(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
   final public func handleOpenURL(_ url: Foundation.URL) -> Swift.Bool
@@ -113,6 +137,7 @@ extension YandexQuickPaySDK.YandexQuickPay {
   public static func initialize(configuration: YandexQuickPaySDK.QuickPayConfig, presenterViewController: UIKit.UIViewController?, quickPaymentStateListener: any YandexQuickPaySDK.QuickPaymentStateListener)
   public static func createInstance(with configuration: YandexQuickPaySDK.QuickPayConfig, presenterViewController: UIKit.UIViewController?, quickPaymentStateListener: any YandexQuickPaySDK.QuickPaymentStateListener) -> YandexQuickPaySDK.YandexQuickPay
 }
+extension YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason : Swift.Hashable {}
 extension YandexQuickPaySDK.QuickPayEnvironment : Swift.Equatable {}
 extension YandexQuickPaySDK.QuickPayEnvironment : Swift.Hashable {}
 extension YandexQuickPaySDK.QuickPayLocale : Swift.Equatable {}

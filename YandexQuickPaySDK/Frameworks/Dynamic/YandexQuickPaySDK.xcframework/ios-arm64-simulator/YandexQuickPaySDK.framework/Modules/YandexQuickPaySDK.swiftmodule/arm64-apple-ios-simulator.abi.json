@@ -353,6 +353,16 @@
       },
       {
         "kind": "Import",
+        "name": "FintechSDKQuickPayment",
+        "printedName": "FintechSDKQuickPayment",
+        "declKind": "Import",
+        "moduleName": "YandexQuickPaySDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "FintechSDKCommonEntity",
         "printedName": "FintechSDKCommonEntity",
         "declKind": "Import",
@@ -414,6 +424,597 @@
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "YandexQuickPaySDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QuickPayAuthState",
+        "printedName": "QuickPayAuthState",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "BiometryFailReason",
+            "printedName": "BiometryFailReason",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "userCancelled",
+                "printedName": "userCancelled",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason.Type) -> YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BiometryFailReason",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BiometryFailReason",
+                            "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO13userCancelledyA2EmF",
+                "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO13userCancelledyA2EmF",
+                "moduleName": "YandexQuickPaySDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "biometryNotAvailable",
+                "printedName": "biometryNotAvailable",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason.Type) -> YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BiometryFailReason",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BiometryFailReason",
+                            "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO20biometryNotAvailableyA2EmF",
+                "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO20biometryNotAvailableyA2EmF",
+                "moduleName": "YandexQuickPaySDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unknownError",
+                "printedName": "unknownError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason.Type) -> YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BiometryFailReason",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BiometryFailReason",
+                            "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO12unknownErroryA2EmF",
+                "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO12unknownErroryA2EmF",
+                "moduleName": "YandexQuickPaySDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO9hashValueSivp",
+                "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO9hashValueSivp",
+                "moduleName": "YandexQuickPaySDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO9hashValueSivg",
+                    "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO9hashValueSivg",
+                    "moduleName": "YandexQuickPaySDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO4hash4intoys6HasherVz_tF",
+                "moduleName": "YandexQuickPaySDK",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BiometryFailReason",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                    "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BiometryFailReason",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                    "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO2eeoiySbAE_AEtFZ",
+                "moduleName": "YandexQuickPaySDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO",
+            "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO",
+            "moduleName": "YandexQuickPaySDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notAuthorized",
+            "printedName": "notAuthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(YandexQuickPaySDK.QuickPayAuthState.Type) -> YandexQuickPaySDK.QuickPayAuthState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuickPayAuthState",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                    "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuickPayAuthState",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO13notAuthorizedyA2CmF",
+            "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO13notAuthorizedyA2CmF",
+            "moduleName": "YandexQuickPaySDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authorizationInProgress",
+            "printedName": "authorizationInProgress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(YandexQuickPaySDK.QuickPayAuthState.Type) -> YandexQuickPaySDK.QuickPayAuthState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuickPayAuthState",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                    "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuickPayAuthState",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO23authorizationInProgressyA2CmF",
+            "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO23authorizationInProgressyA2CmF",
+            "moduleName": "YandexQuickPaySDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "biometryInProgress",
+            "printedName": "biometryInProgress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(YandexQuickPaySDK.QuickPayAuthState.Type) -> YandexQuickPaySDK.QuickPayAuthState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuickPayAuthState",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                    "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuickPayAuthState",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18biometryInProgressyA2CmF",
+            "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO18biometryInProgressyA2CmF",
+            "moduleName": "YandexQuickPaySDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "biometryFailed",
+            "printedName": "biometryFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(YandexQuickPaySDK.QuickPayAuthState.Type) -> (YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason) -> YandexQuickPaySDK.QuickPayAuthState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason) -> YandexQuickPaySDK.QuickPayAuthState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuickPayAuthState",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BiometryFailReason",
+                            "printedName": "YandexQuickPaySDK.QuickPayAuthState.BiometryFailReason",
+                            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO18BiometryFailReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuickPayAuthState",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO14biometryFailedyA2C18BiometryFailReasonO_tcACmF",
+            "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO14biometryFailedyA2C18BiometryFailReasonO_tcACmF",
+            "moduleName": "YandexQuickPaySDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "biometryRequired",
+            "printedName": "biometryRequired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(YandexQuickPaySDK.QuickPayAuthState.Type) -> YandexQuickPaySDK.QuickPayAuthState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuickPayAuthState",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                    "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuickPayAuthState",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO16biometryRequiredyA2CmF",
+            "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO16biometryRequiredyA2CmF",
+            "moduleName": "YandexQuickPaySDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authorized",
+            "printedName": "authorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(YandexQuickPaySDK.QuickPayAuthState.Type) -> YandexQuickPaySDK.QuickPayAuthState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuickPayAuthState",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                    "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "YandexQuickPaySDK.QuickPayAuthState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuickPayAuthState",
+                        "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO10authorizedyA2CmF",
+            "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO10authorizedyA2CmF",
+            "moduleName": "YandexQuickPaySDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QuickPayAuthState",
+                "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QuickPayAuthState",
+                "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17YandexQuickPaySDK0bC9AuthStateO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO2eeoiySbAC_ACtFZ",
+            "moduleName": "YandexQuickPaySDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17YandexQuickPaySDK0bC9AuthStateO",
+        "mangledName": "$s17YandexQuickPaySDK0bC9AuthStateO",
+        "moduleName": "YandexQuickPaySDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1958,6 +2559,62 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAuthStateChanged",
+            "printedName": "onAuthStateChanged(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QuickPayAuthState",
+                "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17YandexQuickPaySDK0B20PaymentStateListenerP06onAuthF7ChangedyyAA0bciF0OF",
+            "mangledName": "$s17YandexQuickPaySDK0B20PaymentStateListenerP06onAuthF7ChangedyyAA0bciF0OF",
+            "moduleName": "YandexQuickPaySDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : YandexQuickPaySDK.QuickPaymentStateListener>",
+            "sugared_genericSig": "<Self where Self : YandexQuickPaySDK.QuickPaymentStateListener>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAuthStateChanged",
+            "printedName": "onAuthStateChanged(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QuickPayAuthState",
+                "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17YandexQuickPaySDK0B20PaymentStateListenerPAAE06onAuthF7ChangedyyAA0bciF0OF",
+            "mangledName": "$s17YandexQuickPaySDK0B20PaymentStateListenerPAAE06onAuthF7ChangedyyAA0bciF0OF",
+            "moduleName": "YandexQuickPaySDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : YandexQuickPaySDK.QuickPaymentStateListener>",
+            "sugared_genericSig": "<Self where Self : YandexQuickPaySDK.QuickPaymentStateListener>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -2310,6 +2967,29 @@
               "AccessControl"
             ],
             "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAuthState",
+            "printedName": "getAuthState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QuickPayAuthState",
+                "printedName": "YandexQuickPaySDK.QuickPayAuthState",
+                "usr": "s:17YandexQuickPaySDK0bC9AuthStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17YandexQuickPaySDK0abC0C12getAuthStateAA0bcfG0OyYaF",
+            "mangledName": "$s17YandexQuickPaySDK0abC0C12getAuthStateAA0bcfG0OyYaF",
+            "moduleName": "YandexQuickPaySDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -2802,105 +3482,105 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/.build-xternal\/FacadeBuild\/sim\/Build\/Intermediates.noindex\/YandexQuickPaySDK.build\/Release-iphonesimulator\/YandexQuickPaySDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/.build-xternal\/FacadeBuild\/sim\/Build\/Intermediates.noindex\/YandexQuickPaySDK.build\/Release-iphonesimulator\/YandexQuickPaySDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 37,
       "value": "\"YandexQuickPaySDK_YandexQuickPaySDK\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/.build-xternal\/FacadeBuild\/sim\/Build\/Intermediates.noindex\/YandexQuickPaySDK.build\/Release-iphonesimulator\/YandexQuickPaySDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/.build-xternal\/FacadeBuild\/sim\/Build\/Intermediates.noindex\/YandexQuickPaySDK.build\/Release-iphonesimulator\/YandexQuickPaySDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "Array",
       "offset": 979,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/.build-xternal\/FacadeBuild\/sim\/Build\/Intermediates.noindex\/YandexQuickPaySDK.build\/Release-iphonesimulator\/YandexQuickPaySDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/.build-xternal\/FacadeBuild\/sim\/Build\/Intermediates.noindex\/YandexQuickPaySDK.build\/Release-iphonesimulator\/YandexQuickPaySDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1506,
       "length": 9,
       "value": "\".bundle\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/.build-xternal\/FacadeBuild\/sim\/Build\/Intermediates.noindex\/YandexQuickPaySDK.build\/Release-iphonesimulator\/YandexQuickPaySDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/.build-xternal\/FacadeBuild\/sim\/Build\/Intermediates.noindex\/YandexQuickPaySDK.build\/Release-iphonesimulator\/YandexQuickPaySDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1658,
       "length": 65,
       "value": "\"unable to find bundle named YandexQuickPaySDK_YandexQuickPaySDK\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/AppMetricaAdapterImpl.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/AppMetricaAdapterImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3895,
+      "offset": 3896,
       "length": 35,
       "value": "\"reportEvent:parameters:onFailure:\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/AppMetricaAdapterImpl.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/AppMetricaAdapterImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4440,
+      "offset": 4441,
       "length": 25,
       "value": "\"reportEvent:parameters:\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/AppMetricaAdapterImpl.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/AppMetricaAdapterImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4651,
+      "offset": 4652,
       "length": 43,
       "value": "\"reportEventWithName:parameters:onFailure:\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/BDUIAdapterImpl.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/BDUIAdapterImpl.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 19,
       "value": "\"YandexQuickPaySDK\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/BDUIAdapterImpl.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/BDUIAdapterImpl.swift",
       "kind": "StringLiteral",
       "offset": 373,
       "length": 16,
       "value": "\"BinaryQuickPay\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/BDUIAdapterImpl.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/BDUIAdapterImpl.swift",
       "kind": "StringLiteral",
       "offset": 440,
       "length": 58,
       "value": "\"Some symbols were lost in the framework. Using stub BDUI\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/BDUIAdapterImpl.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/BDUIAdapterImpl.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 61,
       "value": "\"Some symbols were lost in the framework. Using stub SwiftUI\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/FintechFontsAdapterImpl.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/FintechFontsAdapterImpl.swift",
       "kind": "BooleanLiteral",
       "offset": 191,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/LoginService\/AuthModelStorage.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Adapters\/LoginService\/AuthModelStorage.swift",
       "kind": "StringLiteral",
       "offset": 139,
       "length": 17,
       "value": "\"fintechsdk.auth\""
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Extensions+Utils\/UIViewWrapper.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/Extensions+Utils\/UIViewWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 183,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/2\/3\/3919464332\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/QuickPayConfig.swift",
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/3\/6\/3943822363\/arcadia\/mobile\/fintech-sdk\/ios\/Facades\/YandexQuickPay\/Sources\/QuickPayConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 426,
       "length": 5,
